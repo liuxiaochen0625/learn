@@ -84,7 +84,7 @@ class PostCode:
 
     def update_mysql(self):
         # 连接数据库
-        db = pymysql.connect("127.0.0.1", "root", "Weidai@123", "db_crawler")
+        db = pymysql.connect("*****", "*****", "******", "*****")
         # 使用cursor()方法获得一个游标
         cursor = db.cursor()
         sql = "update tb_city_code_2 set post_code = %s where province_name = %s and county_name = %s"
